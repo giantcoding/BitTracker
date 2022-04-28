@@ -55,7 +55,7 @@ class mainWindow(QMainWindow):
         time = datetime.now().strftime('%H:%M:%S')
         return "Updated at: " f'{time}' 
     
-    # Crea una base de datos sqlite con un valor llamado "desired_price" que es un float
+    
     def dataBaseCreation(self):
         """This function create a database with the name "desired_price"."""
         conn = sql.connect('database.db')
