@@ -64,6 +64,12 @@ class mainWindow(QMainWindow):
         conn.commit()
         conn.close()
     
+    
+   """
+From here to below is still in development. Different ways are being tested to achieve an optimal result.
+We also need to add the telegram bot to notify you of the desired price.
+   """
+    
     def userInputPrice(self):
         user_value = self.textInput.toPlainText()
         conn = sql.connect('database.db')
